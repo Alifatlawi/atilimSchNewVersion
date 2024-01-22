@@ -51,7 +51,7 @@ struct DaySelectionView: View {
                     Text(day.prefix(3))
                         .padding(.vertical, 8)
                         .padding(.horizontal, 12)
-                        .padding(.horizontal, screenSize.width * 0.01)
+                        .padding(.horizontal, screenSize.width * 0.016)
                         .background(selectedDay == day ? Color.blue : Color.gray.opacity(0.3))
                         .foregroundColor(selectedDay == day ? .white : .black)
                         .clipShape(RoundedRectangle(cornerRadius: 8))

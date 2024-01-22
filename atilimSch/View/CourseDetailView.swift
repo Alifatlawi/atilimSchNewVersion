@@ -17,6 +17,7 @@ struct CourseDetailView: View {
     @State private var conflictDay = ""
     @State private var saveSuccessful = false
     @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         List {
             Section(header: Text("Course Information")) {

@@ -33,7 +33,6 @@
 		4CEEAF302B5EEDBA004543A8 /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */; };
 		4CEEAF322B5EEDF7004543A8 /* GenerateScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF312B5EEDF7004543A8 /* GenerateScheduleViewModel.swift */; };
 		4CEEAF342B5EEEC1004543A8 /* DynamicScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */; };
-		4CEEAF362B5EF299004543A8 /* ScheduleOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */; };
 		4CEEAF382B5EF874004543A8 /* DecodableCourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */; };
 		4CEEAF3A2B5F0136004543A8 /* EditCoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
 		4CEEAF312B5EEDF7004543A8 /* GenerateScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateScheduleViewModel.swift; sourceTree = "<group>"; };
 		4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicScheduleView.swift; sourceTree = "<group>"; };
-		4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOptionsView.swift; sourceTree = "<group>"; };
 		4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableCourseModel.swift; sourceTree = "<group>"; };
 		4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCoursesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,7 +164,6 @@
 				4CEEAF2B2B5EE7C0004543A8 /* AutuScheduleView.swift */,
 				4CEEAF2D2B5EEB29004543A8 /* ReviewScheduleView.swift */,
 				4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */,
-				4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */,
 				4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */,
 			);
 			path = View;
@@ -272,7 +269,6 @@
 				4C6BDC252B5D4311007044BA /* ContentView.swift in Sources */,
 				4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */,
 				4C6BDC412B5DCF4F007044BA /* CoreDataViewModel.swift in Sources */,
-				4CEEAF362B5EF299004543A8 /* ScheduleOptionsView.swift in Sources */,
 				4CEEAF322B5EEDF7004543A8 /* GenerateScheduleViewModel.swift in Sources */,
 				4CEEAF1E2B5E8E04004543A8 /* SelectScheduleTypeView.swift in Sources */,
 				4CEEAF2A2B5EDA15004543A8 /* SelectScheduleView.swift in Sources */,

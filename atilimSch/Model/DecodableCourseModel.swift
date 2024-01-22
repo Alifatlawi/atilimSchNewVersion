@@ -20,7 +20,7 @@ struct WelcomeElement: Codable {
 struct deSection: Codable {
     let id: String
     let teacher: Teacher
-    let schedules: [Schedule]
+    let schedules: [deSchedule]
 }
 
 // MARK: - Schedule
