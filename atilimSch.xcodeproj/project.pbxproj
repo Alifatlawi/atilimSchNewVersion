@@ -7,18 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C06BCA02B5DDB0000C69815 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06BC9F2B5DDB0000C69815 /* CourseDetailView.swift */; };
 		4C6BDC232B5D4311007044BA /* atilimSchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC222B5D4311007044BA /* atilimSchApp.swift */; };
 		4C6BDC252B5D4311007044BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC242B5D4311007044BA /* ContentView.swift */; };
 		4C6BDC272B5D4311007044BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6BDC262B5D4311007044BA /* Assets.xcassets */; };
 		4C6BDC2A2B5D4311007044BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6BDC292B5D4311007044BA /* Preview Assets.xcassets */; };
+		4C6BDC322B5D4360007044BA /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC312B5D4360007044BA /* GetData.swift */; };
+		4C6BDC352B5D4371007044BA /* CoursesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC342B5D4371007044BA /* CoursesModel.swift */; };
+		4C6BDC3B2B5D9C00007044BA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC3A2B5D9C00007044BA /* CardView.swift */; };
+		4C6BDC3D2B5DBE1E007044BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC3C2B5DBE1E007044BA /* HomeView.swift */; };
+		4C6BDC3F2B5DCD78007044BA /* ManualScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC3E2B5DCD78007044BA /* ManualScheduleView.swift */; };
+		4C6BDC412B5DCF4F007044BA /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC402B5DCF4F007044BA /* CoreDataViewModel.swift */; };
+		4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC422B5DD03B007044BA /* CoursesDB.xcdatamodeld */; };
+		4C6BDC492B5DD52D007044BA /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC482B5DD52D007044BA /* LinkView.swift */; };
+		4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */; };
+		4CEEAF1E2B5E8E04004543A8 /* SelectScheduleTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF1D2B5E8E04004543A8 /* SelectScheduleTypeView.swift */; };
+		4CEEAF202B5E9943004543A8 /* StarAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF1F2B5E9943004543A8 /* StarAnimationView.swift */; };
+		4CEEAF222B5EA35E004543A8 /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF212B5EA35E004543A8 /* TextEffect.swift */; };
+		4CEEAF242B5EA605004543A8 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF232B5EA605004543A8 /* MatrixView.swift */; };
+		4CEEAF262B5EC6AD004543A8 /* ScheduleResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF252B5EC6AD004543A8 /* ScheduleResultView.swift */; };
+		4CEEAF282B5EC748004543A8 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF272B5EC748004543A8 /* ScheduleView.swift */; };
+		4CEEAF2A2B5EDA15004543A8 /* SelectScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF292B5EDA15004543A8 /* SelectScheduleView.swift */; };
+		4CEEAF2C2B5EE7C0004543A8 /* AutuScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF2B2B5EE7C0004543A8 /* AutuScheduleView.swift */; };
+		4CEEAF2E2B5EEB29004543A8 /* ReviewScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF2D2B5EEB29004543A8 /* ReviewScheduleView.swift */; };
+		4CEEAF302B5EEDBA004543A8 /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */; };
+		4CEEAF322B5EEDF7004543A8 /* GenerateScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF312B5EEDF7004543A8 /* GenerateScheduleViewModel.swift */; };
+		4CEEAF342B5EEEC1004543A8 /* DynamicScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */; };
+		4CEEAF362B5EF299004543A8 /* ScheduleOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */; };
+		4CEEAF382B5EF874004543A8 /* DecodableCourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */; };
+		4CEEAF3A2B5F0136004543A8 /* EditCoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C06BC9F2B5DDB0000C69815 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		4C6BDC1F2B5D4311007044BA /* atilimSch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atilimSch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6BDC222B5D4311007044BA /* atilimSchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atilimSchApp.swift; sourceTree = "<group>"; };
 		4C6BDC242B5D4311007044BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C6BDC262B5D4311007044BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6BDC292B5D4311007044BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C6BDC312B5D4360007044BA /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		4C6BDC342B5D4371007044BA /* CoursesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesModel.swift; sourceTree = "<group>"; };
+		4C6BDC3A2B5D9C00007044BA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4C6BDC3C2B5DBE1E007044BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4C6BDC3E2B5DCD78007044BA /* ManualScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualScheduleView.swift; sourceTree = "<group>"; };
+		4C6BDC402B5DCF4F007044BA /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		4C6BDC432B5DD03B007044BA /* CoursesDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoursesDB.xcdatamodel; sourceTree = "<group>"; };
+		4C6BDC482B5DD52D007044BA /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		4CEEAF1D2B5E8E04004543A8 /* SelectScheduleTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScheduleTypeView.swift; sourceTree = "<group>"; };
+		4CEEAF1F2B5E9943004543A8 /* StarAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAnimationView.swift; sourceTree = "<group>"; };
+		4CEEAF212B5EA35E004543A8 /* TextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
+		4CEEAF232B5EA605004543A8 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
+		4CEEAF252B5EC6AD004543A8 /* ScheduleResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResultView.swift; sourceTree = "<group>"; };
+		4CEEAF272B5EC748004543A8 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		4CEEAF292B5EDA15004543A8 /* SelectScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScheduleView.swift; sourceTree = "<group>"; };
+		4CEEAF2B2B5EE7C0004543A8 /* AutuScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutuScheduleView.swift; sourceTree = "<group>"; };
+		4CEEAF2D2B5EEB29004543A8 /* ReviewScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScheduleView.swift; sourceTree = "<group>"; };
+		4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
+		4CEEAF312B5EEDF7004543A8 /* GenerateScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateScheduleViewModel.swift; sourceTree = "<group>"; };
+		4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicScheduleView.swift; sourceTree = "<group>"; };
+		4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOptionsView.swift; sourceTree = "<group>"; };
+		4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableCourseModel.swift; sourceTree = "<group>"; };
+		4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCoursesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +101,18 @@
 		4C6BDC212B5D4311007044BA /* atilimSch */ = {
 			isa = PBXGroup;
 			children = (
+				4C6BDC452B5DD392007044BA /* Manager */,
+				4C6BDC392B5D9BE6007044BA /* SubView */,
+				4C6BDC382B5D9BD1007044BA /* Extentions */,
+				4C6BDC372B5D9BC8007044BA /* View */,
+				4C6BDC362B5D9BC0007044BA /* ViewModel */,
+				4C6BDC332B5D4366007044BA /* Model */,
+				4C6BDC302B5D433C007044BA /* Services */,
 				4C6BDC222B5D4311007044BA /* atilimSchApp.swift */,
 				4C6BDC242B5D4311007044BA /* ContentView.swift */,
 				4C6BDC262B5D4311007044BA /* Assets.xcassets */,
 				4C6BDC282B5D4311007044BA /* Preview Content */,
+				4C6BDC422B5DD03B007044BA /* CoursesDB.xcdatamodeld */,
 			);
 			path = atilimSch;
 			sourceTree = "<group>";
@@ -65,6 +123,79 @@
 				4C6BDC292B5D4311007044BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C6BDC302B5D433C007044BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BDC312B5D4360007044BA /* GetData.swift */,
+				4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C6BDC332B5D4366007044BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BDC342B5D4371007044BA /* CoursesModel.swift */,
+				4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C6BDC362B5D9BC0007044BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BDC402B5DCF4F007044BA /* CoreDataViewModel.swift */,
+				4CEEAF312B5EEDF7004543A8 /* GenerateScheduleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C6BDC372B5D9BC8007044BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BDC3C2B5DBE1E007044BA /* HomeView.swift */,
+				4C6BDC3E2B5DCD78007044BA /* ManualScheduleView.swift */,
+				4C6BDC482B5DD52D007044BA /* LinkView.swift */,
+				4C06BC9F2B5DDB0000C69815 /* CourseDetailView.swift */,
+				4CEEAF1D2B5E8E04004543A8 /* SelectScheduleTypeView.swift */,
+				4CEEAF252B5EC6AD004543A8 /* ScheduleResultView.swift */,
+				4CEEAF272B5EC748004543A8 /* ScheduleView.swift */,
+				4CEEAF292B5EDA15004543A8 /* SelectScheduleView.swift */,
+				4CEEAF2B2B5EE7C0004543A8 /* AutuScheduleView.swift */,
+				4CEEAF2D2B5EEB29004543A8 /* ReviewScheduleView.swift */,
+				4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */,
+				4CEEAF352B5EF299004543A8 /* ScheduleOptionsView.swift */,
+				4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C6BDC382B5D9BD1007044BA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		4C6BDC392B5D9BE6007044BA /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BDC3A2B5D9C00007044BA /* CardView.swift */,
+				4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */,
+				4CEEAF1F2B5E9943004543A8 /* StarAnimationView.swift */,
+				4CEEAF212B5EA35E004543A8 /* TextEffect.swift */,
+				4CEEAF232B5EA605004543A8 /* MatrixView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		4C6BDC452B5DD392007044BA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +268,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CEEAF2E2B5EEB29004543A8 /* ReviewScheduleView.swift in Sources */,
 				4C6BDC252B5D4311007044BA /* ContentView.swift in Sources */,
+				4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */,
+				4C6BDC412B5DCF4F007044BA /* CoreDataViewModel.swift in Sources */,
+				4CEEAF362B5EF299004543A8 /* ScheduleOptionsView.swift in Sources */,
+				4CEEAF322B5EEDF7004543A8 /* GenerateScheduleViewModel.swift in Sources */,
+				4CEEAF1E2B5E8E04004543A8 /* SelectScheduleTypeView.swift in Sources */,
+				4CEEAF2A2B5EDA15004543A8 /* SelectScheduleView.swift in Sources */,
 				4C6BDC232B5D4311007044BA /* atilimSchApp.swift in Sources */,
+				4CEEAF282B5EC748004543A8 /* ScheduleView.swift in Sources */,
+				4CEEAF302B5EEDBA004543A8 /* CourseService.swift in Sources */,
+				4C06BCA02B5DDB0000C69815 /* CourseDetailView.swift in Sources */,
+				4CEEAF2C2B5EE7C0004543A8 /* AutuScheduleView.swift in Sources */,
+				4CEEAF262B5EC6AD004543A8 /* ScheduleResultView.swift in Sources */,
+				4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */,
+				4C6BDC352B5D4371007044BA /* CoursesModel.swift in Sources */,
+				4C6BDC3D2B5DBE1E007044BA /* HomeView.swift in Sources */,
+				4C6BDC3F2B5DCD78007044BA /* ManualScheduleView.swift in Sources */,
+				4CEEAF382B5EF874004543A8 /* DecodableCourseModel.swift in Sources */,
+				4CEEAF342B5EEEC1004543A8 /* DynamicScheduleView.swift in Sources */,
+				4C6BDC322B5D4360007044BA /* GetData.swift in Sources */,
+				4CEEAF242B5EA605004543A8 /* MatrixView.swift in Sources */,
+				4CEEAF202B5E9943004543A8 /* StarAnimationView.swift in Sources */,
+				4C6BDC492B5DD52D007044BA /* LinkView.swift in Sources */,
+				4C6BDC3B2B5D9C00007044BA /* CardView.swift in Sources */,
+				4CEEAF222B5EA35E004543A8 /* TextEffect.swift in Sources */,
+				4CEEAF3A2B5F0136004543A8 /* EditCoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,21 +431,27 @@
 				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Atilim Schedule";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = biligoba.atilimSch;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,21 +466,27 @@
 				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Atilim Schedule";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = biligoba.atilimSch;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +512,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C6BDC422B5DD03B007044BA /* CoursesDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C6BDC432B5DD03B007044BA /* CoursesDB.xcdatamodel */,
+			);
+			currentVersion = 4C6BDC432B5DD03B007044BA /* CoursesDB.xcdatamodel */;
+			path = CoursesDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C6BDC172B5D4311007044BA /* Project object */;
 }

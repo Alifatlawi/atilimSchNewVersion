@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct atilimSchApp: App {
+    @StateObject private var CoredataViewModel = CoreDataViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .colorScheme(.dark)
+                .environment(\.managedObjectContext, CoredataViewModel.container.viewContext)
         }
     }
 }
