@@ -84,7 +84,8 @@ struct AutuScheduleView: View {
         if query.isEmpty {
             filteredCourses = courses
         } else {
-            filteredCourses = courses.filter { $0.id.contains(query) }
+            // Convert both search query and course id to lower case for case-insensitive comparison
+            filteredCourses = courses.filter { $0.id.lowercased().contains(query.lowercased()) }
         }
     }
     

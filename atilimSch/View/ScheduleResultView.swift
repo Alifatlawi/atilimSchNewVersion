@@ -103,24 +103,16 @@ struct ScheduleResultView: View {
         }
 
         let calendar = Calendar.current
-        let startHour = calendar.component(.hour, from: startTime)
-        let endHour = calendar.component(.hour, from: endTime)
-        let startMinute = calendar.component(.minute, from: startTime)
-        let endMinute = calendar.component(.minute, from: endTime)
+        let startComponents = calendar.dateComponents([.hour, .minute], from: startTime)
+        let endComponents = calendar.dateComponents([.hour, .minute], from: endTime)
 
-        if hour < startHour || hour > endHour {
-            return false
-        }
+        // Calculate the time in minutes for comparison
+        let givenTimeInMinutes = hour * 60 + 30 // All slots are at xx:30
+        let startTimeInMinutes = startComponents.hour! * 60 + startComponents.minute!
+        let endTimeInMinutes = endComponents.hour! * 60 + endComponents.minute!
 
-        if hour == startHour && startMinute > 0 {
-            return false
-        }
-
-        if hour == endHour && hour != startHour && endMinute == 0 {
-            return false
-        }
-
-        return true
+        // Check if the given time is within the start and end time
+        return givenTimeInMinutes >= startTimeInMinutes && givenTimeInMinutes < endTimeInMinutes
     }
 
 

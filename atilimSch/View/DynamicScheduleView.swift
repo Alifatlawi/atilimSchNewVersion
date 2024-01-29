@@ -20,33 +20,38 @@ struct DynamicScheduleView: View {
     let endHour = 18
     
     var body: some View {
-           NavigationView {
-               VStack {
-                   if scheduleOptions.isEmpty {
-                       Text("No schedule found for these courses 😔")
-                           .font(.headline)
-                           .padding()
-                   } else {
-                       ScrollView([.vertical, .horizontal]) {
-                           VStack {
-                               scheduleHeader
-                               if scheduleOptions.indices.contains(selectedOptionIndex) {
-                                   scheduleGrid(for: scheduleOptions[selectedOptionIndex])
-                               }
-                           }
-                       }
-                       .padding()
-                   }
-
-                   navigationButtons
-               }
-               .navigationBarTitle("Schedule", displayMode: .inline)
-               .navigationBarItems(trailing: Button("Save") {
-                   saveCurrentSchedule()
-               })
-               .navigationBarBackButtonHidden(true) // Hides the back button
-           }
-       }
+        NavigationView {
+            VStack {
+                if scheduleOptions.isEmpty {
+                    Text("No schedule found for these courses 😔")
+                        .font(.headline)
+                        .padding()
+                } else {
+                    ScrollView([.vertical, .horizontal]) {
+                        VStack {
+                            scheduleHeader
+                            if scheduleOptions.indices.contains(selectedOptionIndex) {
+                                scheduleGrid(for: scheduleOptions[selectedOptionIndex])
+                            }
+                        }
+                    }
+                    .padding()
+                }
+                
+                navigationButtons
+            }
+            .navigationBarTitle("Schedule", displayMode: .inline)
+            .navigationBarItems(
+                leading: Button("Cancel") {
+                    dismiss()
+                },
+                trailing: Button("Save") {
+                    saveCurrentSchedule()
+                }
+            )
+            .navigationBarBackButtonHidden(true) // Hides the back button
+        }
+    }
     
     private var scheduleHeader: some View {
         HStack {
@@ -77,7 +82,7 @@ struct DynamicScheduleView: View {
     
     private func scheduleCell(for day: String, hour: Int, courseGroups: [WelcomeElement]) -> some View {
         var courseDetails: (courseID: String, sectionID: String)? = nil
-
+        
         for course in courseGroups {
             for schedule in course.section.schedules {
                 if isTimeWithinSchedule(day: day, hour: hour, schedule: schedule) {
@@ -89,7 +94,7 @@ struct DynamicScheduleView: View {
                 break
             }
         }
-
+        
         return Rectangle()
             .fill(courseDetails != nil ? Color.blue : Color.clear)  // Example color
             .border(Color.gray.opacity(0.3), width: 0.5)
@@ -105,10 +110,10 @@ struct DynamicScheduleView: View {
                             .foregroundColor(.white.opacity(0.7))
                     }
                 }
-                .padding(4)
+                    .padding(4)
             )
     }
-
+    
     
     private func isTimeWithinSchedule(day: String, hour: Int, schedule: deSchedule) -> Bool {
         let scheduleDayInEnglish = convertDayToEnglish(schedule.day)

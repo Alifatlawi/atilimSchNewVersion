@@ -12,7 +12,8 @@ struct ReviewScheduleView: View {
     @ObservedObject var viewModel = GenerateScheduleViewModel()
     @State private var showDynamicScheduleView = false
     @State private var isLoading = false  // State variable to track loading status
-
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -36,7 +37,7 @@ struct ReviewScheduleView: View {
                             }
                         }
                     }
-
+                    
                     Button("Generate Schedule") {
                         isLoading = true  // Start loading
                         viewModel.loadScheduleOptions(courseIds: Array(selectedCourseIds))
@@ -59,11 +60,16 @@ struct ReviewScheduleView: View {
                     }
                 }
             }
+            .navigationBarItems(
+                leading: Button("Cancel") {
+                    dismiss()  // Dismiss the view when 'Cancel' is tapped
+                }
+            )
         }
     }
 }
-    
-    //
-    //#Preview {
-    //    ReviewScheduleView()
-    //}
+
+//
+//#Preview {
+//    ReviewScheduleView()
+//}
