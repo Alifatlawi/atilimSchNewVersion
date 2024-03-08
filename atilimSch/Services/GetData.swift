@@ -29,7 +29,10 @@ class DataService {
                     completion(courses)
                 }
             } catch {
-                print("Error decoding json")
+                print("Error decoding json: \(error)")
+                if let dataString = String(data: data, encoding: .utf8) {
+                    print("Received data: \(dataString)")
+                }
                 completion(nil)
             }
         }.resume()

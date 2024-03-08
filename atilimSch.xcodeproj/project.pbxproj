@@ -21,6 +21,13 @@
 		4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC422B5DD03B007044BA /* CoursesDB.xcdatamodeld */; };
 		4C6BDC492B5DD52D007044BA /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC482B5DD52D007044BA /* LinkView.swift */; };
 		4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */; };
+		4CEBFD4A2B9AA7E700E45477 /* ExamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD492B9AA7E700E45477 /* ExamsModel.swift */; };
+		4CEBFD4C2B9AA83B00E45477 /* GetExams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD4B2B9AA83B00E45477 /* GetExams.swift */; };
+		4CEBFD4E2B9AAAC900E45477 /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD4D2B9AAAC900E45477 /* ExamView.swift */; };
+		4CEBFD502B9AAD4C00E45477 /* ExamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD4F2B9AAD4C00E45477 /* ExamListView.swift */; };
+		4CEBFD532B9AAF7300E45477 /* GenExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD522B9AAF7300E45477 /* GenExamView.swift */; };
+		4CEBFD552B9AB2BC00E45477 /* EngExamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD542B9AB2BC00E45477 /* EngExamListView.swift */; };
+		4CEBFD572B9AB3E100E45477 /* CheckMyExamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD562B9AB3E100E45477 /* CheckMyExamsView.swift */; };
 		4CEEAF1E2B5E8E04004543A8 /* SelectScheduleTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF1D2B5E8E04004543A8 /* SelectScheduleTypeView.swift */; };
 		4CEEAF202B5E9943004543A8 /* StarAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF1F2B5E9943004543A8 /* StarAnimationView.swift */; };
 		4CEEAF222B5EA35E004543A8 /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEAF212B5EA35E004543A8 /* TextEffect.swift */; };
@@ -53,6 +60,13 @@
 		4C6BDC432B5DD03B007044BA /* CoursesDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoursesDB.xcdatamodel; sourceTree = "<group>"; };
 		4C6BDC482B5DD52D007044BA /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		4CEBFD492B9AA7E700E45477 /* ExamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsModel.swift; sourceTree = "<group>"; };
+		4CEBFD4B2B9AA83B00E45477 /* GetExams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExams.swift; sourceTree = "<group>"; };
+		4CEBFD4D2B9AAAC900E45477 /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
+		4CEBFD4F2B9AAD4C00E45477 /* ExamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamListView.swift; sourceTree = "<group>"; };
+		4CEBFD522B9AAF7300E45477 /* GenExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenExamView.swift; sourceTree = "<group>"; };
+		4CEBFD542B9AB2BC00E45477 /* EngExamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngExamListView.swift; sourceTree = "<group>"; };
+		4CEBFD562B9AB3E100E45477 /* CheckMyExamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyExamsView.swift; sourceTree = "<group>"; };
 		4CEEAF1D2B5E8E04004543A8 /* SelectScheduleTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScheduleTypeView.swift; sourceTree = "<group>"; };
 		4CEEAF1F2B5E9943004543A8 /* StarAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAnimationView.swift; sourceTree = "<group>"; };
 		4CEEAF212B5EA35E004543A8 /* TextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
@@ -128,6 +142,7 @@
 			children = (
 				4C6BDC312B5D4360007044BA /* GetData.swift */,
 				4CEEAF2F2B5EEDBA004543A8 /* CourseService.swift */,
+				4CEBFD4B2B9AA83B00E45477 /* GetExams.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -137,6 +152,7 @@
 			children = (
 				4C6BDC342B5D4371007044BA /* CoursesModel.swift */,
 				4CEEAF372B5EF874004543A8 /* DecodableCourseModel.swift */,
+				4CEBFD492B9AA7E700E45477 /* ExamsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +169,7 @@
 		4C6BDC372B5D9BC8007044BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CEBFD512B9AAF6600E45477 /* ExamsViews */,
 				4C6BDC3C2B5DBE1E007044BA /* HomeView.swift */,
 				4C6BDC3E2B5DCD78007044BA /* ManualScheduleView.swift */,
 				4C6BDC482B5DD52D007044BA /* LinkView.swift */,
@@ -165,6 +182,9 @@
 				4CEEAF2D2B5EEB29004543A8 /* ReviewScheduleView.swift */,
 				4CEEAF332B5EEEC1004543A8 /* DynamicScheduleView.swift */,
 				4CEEAF392B5F0136004543A8 /* EditCoursesView.swift */,
+				4CEBFD4D2B9AAAC900E45477 /* ExamView.swift */,
+				4CEBFD4F2B9AAD4C00E45477 /* ExamListView.swift */,
+				4CEBFD562B9AB3E100E45477 /* CheckMyExamsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +213,15 @@
 			children = (
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		4CEBFD512B9AAF6600E45477 /* ExamsViews */ = {
+			isa = PBXGroup;
+			children = (
+				4CEBFD522B9AAF7300E45477 /* GenExamView.swift */,
+				4CEBFD542B9AB2BC00E45477 /* EngExamListView.swift */,
+			);
+			path = ExamsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,15 +296,22 @@
 			files = (
 				4CEEAF2E2B5EEB29004543A8 /* ReviewScheduleView.swift in Sources */,
 				4C6BDC252B5D4311007044BA /* ContentView.swift in Sources */,
+				4CEBFD4E2B9AAAC900E45477 /* ExamView.swift in Sources */,
+				4CEBFD572B9AB3E100E45477 /* CheckMyExamsView.swift in Sources */,
 				4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */,
 				4C6BDC412B5DCF4F007044BA /* CoreDataViewModel.swift in Sources */,
 				4CEEAF322B5EEDF7004543A8 /* GenerateScheduleViewModel.swift in Sources */,
 				4CEEAF1E2B5E8E04004543A8 /* SelectScheduleTypeView.swift in Sources */,
+				4CEBFD502B9AAD4C00E45477 /* ExamListView.swift in Sources */,
 				4CEEAF2A2B5EDA15004543A8 /* SelectScheduleView.swift in Sources */,
 				4C6BDC232B5D4311007044BA /* atilimSchApp.swift in Sources */,
 				4CEEAF282B5EC748004543A8 /* ScheduleView.swift in Sources */,
 				4CEEAF302B5EEDBA004543A8 /* CourseService.swift in Sources */,
+				4CEBFD552B9AB2BC00E45477 /* EngExamListView.swift in Sources */,
+				4CEBFD4A2B9AA7E700E45477 /* ExamsModel.swift in Sources */,
+				4CEBFD4C2B9AA83B00E45477 /* GetExams.swift in Sources */,
 				4C06BCA02B5DDB0000C69815 /* CourseDetailView.swift in Sources */,
+				4CEBFD532B9AAF7300E45477 /* GenExamView.swift in Sources */,
 				4CEEAF2C2B5EE7C0004543A8 /* AutuScheduleView.swift in Sources */,
 				4CEEAF262B5EC6AD004543A8 /* ScheduleResultView.swift in Sources */,
 				4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */,
@@ -438,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -473,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

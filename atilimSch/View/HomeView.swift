@@ -60,11 +60,14 @@ struct HomeView: View {
                         })
                         
                         
+                        NavigationLink {
+                            ExamView()
+                        } label: {
+                            CardView(title: "Exams", image: "mainpic", text: "Now you can track your Exams !")
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.4), Color.red.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .clipShape(.rect(cornerRadius: 15))
+                        }
                         
-                        
-                        CardView(title: "Exams", image: "soon", text: "COMING SOON!!")
-                            .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.4), Color.black.opacity(0.4)]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                            .clipShape(.rect(cornerRadius: 15))
                     }
                     .padding()
                 }
