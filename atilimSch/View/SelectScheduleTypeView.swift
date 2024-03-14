@@ -25,22 +25,30 @@ struct SelectScheduleTypeView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: screenSize.height * 0.2)
                 
-                Button(action: {showAutoView = true}, label: {
+                NavigationLink(destination: AutuScheduleView()) {
                     optionCard(
                         title: "Automatic",
                         description: "Let us generate the schedule for you. Just select your courses, and we'll do the rest!",
                         imageName: "mkc"
                     )
                     .padding(.vertical)
-                })
-                .sheet(isPresented: $showAutoView) {
-                    AutuScheduleView()
                 }
                 
+//                Button(action: {showAutoView = true}, label: {
+//                    optionCard(
+//                        title: "Automatic",
+//                        description: "Let us generate the schedule for you. Just select your courses, and we'll do the rest!",
+//                        imageName: "mkc"
+//                    )
+//                    .padding(.vertical)
+//                })
+//                .sheet(isPresented: $showAutoView) {
+//                    AutuScheduleView()
+//                }
                 
-                Button(action: {
-                    showManualView = true
-                }) {
+                NavigationLink {
+                    ManualScheduleView()
+                } label: {
                     optionCard(
                         title: "Manual",
                         description: "Select your courses and create your own schedule manually.",
@@ -48,9 +56,22 @@ struct SelectScheduleTypeView: View {
                         isImageLeading: true
                     )
                 }
-                .sheet(isPresented: $showManualView) {
-                    ManualScheduleView()
-                }
+
+                
+                
+//                Button(action: {
+//                    showManualView = true
+//                }) {
+//                    optionCard(
+//                        title: "Manual",
+//                        description: "Select your courses and create your own schedule manually.",
+//                        imageName: "mkc1",
+//                        isImageLeading: true
+//                    )
+//                }
+//                .sheet(isPresented: $showManualView) {
+//                    ManualScheduleView()
+//                }
             }
         }
     }
@@ -97,5 +118,7 @@ struct SelectScheduleTypeView: View {
 }
 
 #Preview {
-    SelectScheduleTypeView()
+    NavigationView{
+        SelectScheduleTypeView()
+    }
 }

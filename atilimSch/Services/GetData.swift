@@ -9,7 +9,7 @@ import Foundation
 
 class DataService {
     func fetchCourses(completion: @escaping ([Course]?) -> Void) {
-        guard let url = URL(string: "https://atilimbackend-nu4gg.ondigitalocean.app/courses") else {
+        guard let url = URL(string: "https://atilim-759xz.ondigitalocean.app/courses") else {
             print("invalid url")
             completion(nil)
             return

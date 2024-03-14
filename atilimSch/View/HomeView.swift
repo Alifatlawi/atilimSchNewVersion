@@ -50,14 +50,23 @@ struct HomeView: View {
                         }
                         
                         
-                        Button(action: {isShowEditCoursesViewPresented = true}, label: {
+                        NavigationLink {
+                            EditCoursesView()
+                        } label: {
                             CardView(title: "Edit Schedule", image: "editcour", text: "Edit, delete, or modify your schedule here.")
                                 .background(LinearGradient(gradient: Gradient(colors: [Color.green.opacity(0.4), Color.blue.opacity(0.4)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                                 .clipShape(.rect(cornerRadius: 15))
-                        })
-                        .sheet(isPresented: $isShowEditCoursesViewPresented, content: {
-                            EditCoursesView()
-                        })
+                        }
+
+                        
+//                        Button(action: {isShowEditCoursesViewPresented = true}, label: {
+//                            CardView(title: "Edit Schedule", image: "editcour", text: "Edit, delete, or modify your schedule here.")
+//                                .background(LinearGradient(gradient: Gradient(colors: [Color.green.opacity(0.4), Color.blue.opacity(0.4)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+//                                .clipShape(.rect(cornerRadius: 15))
+//                        })
+//                        .sheet(isPresented: $isShowEditCoursesViewPresented, content: {
+//                            EditCoursesView()
+//                        })
                         
                         
                         NavigationLink {

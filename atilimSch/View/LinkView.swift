@@ -95,6 +95,17 @@ struct LinkView: View {
             })
             .accentColor(.primary)
             
+            
+            Link(destination: URL(string: "https://moodle.atilim.edu.tr")!, label: {
+                HStack {
+                    Label("Moodle Atilim", systemImage: "building")
+                    Spacer()
+                    Image(systemName: "link")
+                        .foregroundStyle(.secondary)
+                }
+            })
+            .accentColor(.primary)
+            
             Link(destination: URL(string: "https://kimlik.atilim.edu.tr/#/")!, label: {
                 HStack {
                     Label("Atacs", systemImage: "graduationcap.fill")

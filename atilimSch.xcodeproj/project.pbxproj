@@ -21,6 +21,8 @@
 		4C6BDC442B5DD03B007044BA /* CoursesDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC422B5DD03B007044BA /* CoursesDB.xcdatamodeld */; };
 		4C6BDC492B5DD52D007044BA /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC482B5DD52D007044BA /* LinkView.swift */; };
 		4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */; };
+		4CE872B42BA2FA390042D423 /* LandscapeEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE872B32BA2FA390042D423 /* LandscapeEX.swift */; };
+		4CE872B62BA32AA80042D423 /* ExamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE872B52BA32AA80042D423 /* ExamsView.swift */; };
 		4CEBFD4A2B9AA7E700E45477 /* ExamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD492B9AA7E700E45477 /* ExamsModel.swift */; };
 		4CEBFD4C2B9AA83B00E45477 /* GetExams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD4B2B9AA83B00E45477 /* GetExams.swift */; };
 		4CEBFD4E2B9AAAC900E45477 /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFD4D2B9AAAC900E45477 /* ExamView.swift */; };
@@ -60,6 +62,8 @@
 		4C6BDC432B5DD03B007044BA /* CoursesDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoursesDB.xcdatamodel; sourceTree = "<group>"; };
 		4C6BDC482B5DD52D007044BA /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		4C6BDC4A2B5DD55E007044BA /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		4CE872B32BA2FA390042D423 /* LandscapeEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeEX.swift; sourceTree = "<group>"; };
+		4CE872B52BA32AA80042D423 /* ExamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsView.swift; sourceTree = "<group>"; };
 		4CEBFD492B9AA7E700E45477 /* ExamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsModel.swift; sourceTree = "<group>"; };
 		4CEBFD4B2B9AA83B00E45477 /* GetExams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExams.swift; sourceTree = "<group>"; };
 		4CEBFD4D2B9AAAC900E45477 /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		4C6BDC382B5D9BD1007044BA /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				4CE872B32BA2FA390042D423 /* LandscapeEX.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			children = (
 				4CEBFD522B9AAF7300E45477 /* GenExamView.swift */,
 				4CEBFD542B9AB2BC00E45477 /* EngExamListView.swift */,
+				4CE872B52BA32AA80042D423 /* ExamsView.swift */,
 			);
 			path = ExamsViews;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 				4CEEAF262B5EC6AD004543A8 /* ScheduleResultView.swift in Sources */,
 				4C6BDC4B2B5DD55E007044BA /* HexagonView.swift in Sources */,
 				4C6BDC352B5D4371007044BA /* CoursesModel.swift in Sources */,
+				4CE872B42BA2FA390042D423 /* LandscapeEX.swift in Sources */,
 				4C6BDC3D2B5DBE1E007044BA /* HomeView.swift in Sources */,
 				4C6BDC3F2B5DCD78007044BA /* ManualScheduleView.swift in Sources */,
 				4CEEAF382B5EF874004543A8 /* DecodableCourseModel.swift in Sources */,
@@ -325,6 +332,7 @@
 				4CEEAF202B5E9943004543A8 /* StarAnimationView.swift in Sources */,
 				4C6BDC492B5DD52D007044BA /* LinkView.swift in Sources */,
 				4C6BDC3B2B5D9C00007044BA /* CardView.swift in Sources */,
+				4CE872B62BA32AA80042D423 /* ExamsView.swift in Sources */,
 				4CEEAF222B5EA35E004543A8 /* TextEffect.swift in Sources */,
 				4CEEAF3A2B5F0136004543A8 /* EditCoursesView.swift in Sources */,
 			);
@@ -474,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -509,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.atilim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

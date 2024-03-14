@@ -1,7 +1,7 @@
 import Foundation
 
 class CourseService {
-    let endpointURL = "https://atilimbackend-nu4gg.ondigitalocean.app/generateSchedule"
+    let endpointURL = "https://atilim-759xz.ondigitalocean.app/generateSchedule"
     
     func fetchCourseDetails(courseIds: [String], completion: @escaping (Welcome?, Error?) -> Void) {
         guard let url = URL(string: endpointURL) else {

@@ -20,8 +20,10 @@ struct ScheduleResultView: View {
                 scheduleHeader
                 scheduleGrid
             }
+            .background(LandscapeOnlyViewModifier())
         }
         .padding()
+        .background(LandscapeOnlyViewModifier())
     }
 
     private var scheduleHeader: some View {
